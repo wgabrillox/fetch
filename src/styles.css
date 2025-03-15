@@ -1,0 +1,108 @@
+.container {
+  height: 100%;
+  min-width: 1136px;
+}
+
+.dogList {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  overflow-y: auto;
+}
+
+.dog {
+  border: 1px solid black;
+  background-color: gray;
+  margin: 1px;
+}
+
+.dogHeader {
+  display: flex;
+  position: relative;
+}
+
+.dogName {
+  flex: 1;
+  font-weight: bold;
+  margin: 5px auto;
+}
+
+.dogFavorite {
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.isFavorite {
+  background-color: red;
+}
+
+.favoriteDog {
+  width: fit-content;
+  background-color: gray;
+}
+
+.dogPicture {
+  margin: 0px auto;
+  object-fit: fill;
+  max-width: 100%;
+  height: 200px;
+}
+
+.dogInfo {
+  display: flex;
+  margin: 0px 5px;
+  flex-direction: column;
+}
+
+.dogInfoRow {
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: column; */
+}
+
+.infoLabel {
+  font-weight: bold;
+}
+
+.logout {
+  position: fixed;
+  top: 15px;
+  right: 75px;
+}
+
+.paginate {
+  ul {
+    list-style: none;
+  }
+
+  ul li {
+    display: inline;
+    padding: 0px 5px;
+    border: 1px solid gray;
+    margin: 0px 2px;
+    border-radius: 5px;
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: gray;
+  }
+}
+
+.filterContainer {
+  display: flex;
+}
+
+.toolBar {
+  display: flex;
+}
+
+.matchFind {
+  align-content: end;
+}
